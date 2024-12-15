@@ -64,12 +64,14 @@ export default function RecursiveSplitScreen({ initialColor, onRemove }: SplitSc
           >
             h
           </button>
-          <button 
-            className="btn-primary"
-            onClick={handleRemove}
-          >
-            -
-          </button>
+          {onRemove && (
+            <button 
+              className="btn-primary"
+              onClick={handleRemove}
+            >
+              -
+            </button>
+          )}
         </div>
       </div>
     )
