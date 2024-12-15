@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply px-2 bg-white text-black border border-black hover:bg-slate-200 text-xs;
+  }
+}
